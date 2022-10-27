@@ -10,7 +10,7 @@
 
 	<!-- Spring MVC Configs -->
 
-	<!-- Step 1: Configure Spring MVC Dispatcher Servlet -->
+	<!-- Step 1: Configure Spring MVC Dispatcher Servlet (Front Controller)-->
 	<servlet>
 		<servlet-name>dispatcher</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -22,6 +22,7 @@
 	</servlet>
 
 	<!-- Step 2: Set up URL mapping for Spring MVC Dispatcher Servlet -->
+	<!-- for any URL patter coming I want to pass it off to DispatcherServlet -->
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
