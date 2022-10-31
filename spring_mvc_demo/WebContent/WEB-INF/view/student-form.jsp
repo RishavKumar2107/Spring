@@ -24,10 +24,21 @@
 		<!-- When Form is loaded Spring MVC will call 
 		student.getFirstName() and student.getLastName()
 		 -->
+		 
+		 <br></br>
+		 
+		 <!-- On submit spring will call student.setCountry() -->
+		  <form:select path="country">
+		 <form:option value="Brazil" label="Brazil" />
+		 <form:option value="India" label="India" />
+		 <form:option value="France" label="France" />
+		 </form:select>
+		 <br></br>
 		<input type="submit" value="submit" />
 		<!-- When Form is submitted Spring MVC will call 
 		student.setFirstName() and student.setLastName()
 		 -->
+		 
 	</form:form>
 	
 
