@@ -3,7 +3,12 @@
 
 <body>
 
-<h2> Spring MVC Demo - Home Page</h2>
+Hello World of Spring
+
+<br></br>
+Student Name : ${param.studentName}
+<br></br>
+The message: ${message}
 
 </body>
 
