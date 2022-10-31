@@ -27,12 +27,21 @@
 		 
 		 <br></br>
 		 
-		 <!-- On submit spring will call student.setCountry() -->
+		 <!-- On submit spring will call student.setCountry() 
 		  <form:select path="country">
 		 <form:option value="Brazil" label="Brazil" />
 		 <form:option value="India" label="India" />
 		 <form:option value="France" label="France" />
 		 </form:select>
+		 -->
+		 
+		  <!-- On submit spring will call student.getCountryOptions() -->
+		  <form:select path="country">
+			 <form:options items="${student.countryOptions}" />
+		  </form:select>
+		 
+		 
+		 
 		 <br></br>
 		<input type="submit" value="submit" />
 		<!-- When Form is submitted Spring MVC will call 
