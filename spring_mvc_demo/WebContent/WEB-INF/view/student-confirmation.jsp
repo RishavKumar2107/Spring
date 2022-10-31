@@ -9,5 +9,6 @@
 	<!--  ${student.firstName} internally calls student.getFirstName() -->
 	The student is confirmed: ${student.firstName} ${student.lastName} 
 	Country: ${student.country}
+	Language: ${student.favLanguage}
 
 </body>
