@@ -15,8 +15,7 @@
 	<br></br>
 	Language: ${student.favoriteLanguage}
 	<br></br>
-	
-	
+
 	Operating Systems:
 
 	<ul>
