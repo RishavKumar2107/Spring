@@ -4,21 +4,20 @@ import java.util.LinkedHashMap;
 public class Student {
 
 	String firstName , lastName , country;
-	String favLanguage;
-	
-	public String getFavLanguage() {
-		return favLanguage;
-	}
-
-	public void setFavLanguage(String favLanguage) {
-		this.favLanguage = favLanguage;
-	}
-
+	public String[] operatingSystems;
 	private LinkedHashMap<String,String> countryOptions;
 	private LinkedHashMap<String, String> favoriteLanguageOptions;
-	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
-		return favoriteLanguageOptions;
+	String favoriteLanguage;
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
 	}
+
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+
 
 	public Student() {
 		countryOptions = new LinkedHashMap<>();
@@ -36,6 +35,27 @@ public class Student {
         favoriteLanguageOptions.put("C#", "C#");
         favoriteLanguageOptions.put("PHP", "PHP");
         favoriteLanguageOptions.put("Ruby", "Ruby");    
+        
+	}
+	
+	
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+
+	
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+		return favoriteLanguageOptions;
+	}
+
+	
+
+	public void setFavoriteLanguageOptions(LinkedHashMap<String, String> favoriteLanguageOptions) {
+		this.favoriteLanguageOptions = favoriteLanguageOptions;
 	}
 
 	//when form is loaded it will call getCountryOptions()
