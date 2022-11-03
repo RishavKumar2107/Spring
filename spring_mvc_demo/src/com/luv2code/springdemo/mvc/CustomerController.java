@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/customer")
 public class CustomerController {
 
-	// add an initbinder ... to convert trim input strings
+		// add an initbinder ... to convert trim input strings
 		// remove leading and trailing whitespace
 		// resolve issue for our validation
 		
