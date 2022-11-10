@@ -44,7 +44,7 @@ public class InstructorDetail {
 	 * 
 	 * CascadeType.REMOVE should not be included
 	 */
-	
+	//we can use the mappedBy parameter to indicate that the given column is owned by another entity:
 	//making it bi-directional
 	//refers to "instructorDetail" property in "instructor" class
 	//@OneToOne(mappedBy="instructorDetail" , cascade=CascadeType.ALL)
