@@ -95,7 +95,7 @@ public class Instructor {
 	public InstructorDetail getInstructorDetail() {
 		return instructorDetail;
 	}
-
+	//association happens here
 	public void setInstructorDetail(InstructorDetail instructorDetail) {
 		this.instructorDetail = instructorDetail;
 	}
