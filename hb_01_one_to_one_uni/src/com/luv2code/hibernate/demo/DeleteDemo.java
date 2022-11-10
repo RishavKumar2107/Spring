@@ -32,7 +32,7 @@ public class DeleteDemo {
 			//fetch the objects
 			Instructor myInstructor = session.get(Instructor.class,id);
 			
-			//save the instructor
+			//delete the instructor
 			//Note: this will also delete the InstructorDetail object
 			//because of cascade
 			
