@@ -20,3 +20,20 @@ Adding Data to Spring Model
 Spring MVC Form Tags and Data Binding
 	Form Tags will generate HTML for you
 	Check Student,StudentController,student-form.jsp,student-confirmation.jsp
+	Note: We create a Student Class and Student Controller Class
+		  Inside Controller method /showForm we add a model attribute "student" which we pass
+		  it to the student-form. In student-form when form is loaded it calls getter methods on
+		  the model attribute we define in the form. when the form is submitted setter methods are
+		  called. and finally student-confirmation form is called where we refere attribute name 
+		  student to get appropriate data
+
+Spring MVC Form Validation Rules
+	Java Standard Bean Validation API is only a specification
+	Hibernate implements the specification
+	use Hiberante Validator 6.2 which is compatible with Hibernate Validator 7
+	check Customer.java CustomerController customer-form.jsp customer-confirmation.jsp
+	
+Next: If we enter String value in the free passes (student-form.jsp) it will break
+to fix this 1. create custom error message (src/message.properties)
+			2. Load custom messages resource in Spring Config file(spring-mvc-demo-servlet.xml)
+	
