@@ -22,7 +22,7 @@
 	</servlet>
 
 	<!-- Step 2: Set up URL mapping for Spring MVC Dispatcher Servlet -->
-	<!-- for any URL patter coming I want to pass it off to DispatcherServlet -->
+	<!-- for any URL pattern coming I want to pass it off to DispatcherServlet -->
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>

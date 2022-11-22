@@ -1,0 +1,22 @@
+First Spring MVC Example
+	1.Create Controller Class (HomeController.java)
+	2.Define Controller method inside controller class
+	3.Add Request Mapping to Controller Method
+	4.Return View Name
+	5.Develop View page (main-menu.jsp)
+	
+Reading HTML Form Data
+	1.Check HelloWorldController.java
+	2.check helloworld-form.jsp and helloworld.jsp
+
+Adding Data to Spring Model
+	Objective : We want to create a new method to process form data
+				Read the form data : student's name
+				Convert the name to upper case
+				Add the upper case version to the model
+				
+	1.Check HelloWorldController > processFormVersionThree
+
+Spring MVC Form Tags and Data Binding
+	Form Tags will generate HTML for you
+	Check Student,StudentController,student-form.jsp,student-confirmation.jsp

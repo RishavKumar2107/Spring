@@ -4,7 +4,8 @@
 	<title>Hello World Input Form</title>
 </head>
 
-<!-- processForm controller method is called on button click -->
+<!-- processFormVersionThree controller method is called on button click 
+also check with action="processForm" and action="processFormVersionTwo" -->
 
 <body>
 	<form action="processFormVersionThree" method="GET">

@@ -21,6 +21,8 @@ public class StudentController {
 		public String showForm(Model theModel) {
 			
 			//create a student object
+			//that will be pass to the form
+			//to make use of it
 			Student theStudent = new Student();
 			
 			//add Student object to the model
@@ -31,6 +33,7 @@ public class StudentController {
 		
 		
 		//@ModelAttribute bind the model attribute to parameter being passed in
+		//this binds form data to the Object
 		@RequestMapping("/processForm")
 		public String processForm(@ModelAttribute("student") Student theStudent) {
 			//Logging data
