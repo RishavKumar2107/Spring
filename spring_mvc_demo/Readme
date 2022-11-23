@@ -35,5 +35,5 @@ Spring MVC Form Validation Rules
 	
 Next: If we enter String value in the free passes (student-form.jsp) it will break
 to fix this 1. create custom error message (src/message.properties)
-			2. Load custom messages resource in Spring Config file(spring-mvc-demo-servlet.xml)
+	    2. Load custom messages resource in Spring Config file(spring-mvc-demo-servlet.xml)
 	
