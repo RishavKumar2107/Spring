@@ -37,6 +37,11 @@ public class HelloWorldController {
 		return "helloworld";
 	}
 	
+	
+	//Instead of using HttpServletRequest , Bind variable using @RequestParam 
+	//Behind the Scene
+	//Spring will read param from request : studentName
+	//bind it to the variable: theName  
 	//using @RequestParam 
 	@RequestMapping("/processFormVersionThree")
 	public String processFormVersionThree(@RequestParam("studentName") String theName , Model model)

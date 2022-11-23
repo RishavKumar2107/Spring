@@ -1,6 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
 import javax.validation.constraints.Max;
+import com.luv2code.springdemo.mvc.validation.CourseCode;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -20,6 +21,9 @@ public class Customer {
 	@NotNull(message="is required")
 	@Size(min=1,message="is required")
 	private String lastName;
+	
+	@CourseCode
+	private String courseCode;
 	
 	
 	//reason for refactoring int to Integer is because 
@@ -59,5 +63,12 @@ public class Customer {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+	
+	
 }

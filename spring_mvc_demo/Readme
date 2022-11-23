@@ -37,3 +37,16 @@ Next: If we enter String value in the free passes (student-form.jsp) it will bre
 to fix this 1. create custom error message (src/message.properties)
 			2. Load custom messages resource in Spring Config file(spring-mvc-demo-servlet.xml)
 	
+Spring MVC Custom Form Validation
+This concept is Advance but it is very useful to create custom annotations
+We could think of a use case where our custom code is more complex.
+Instead of comparing the start of a string, we instead need to connection with 
+a backend database or REST web service. So that is probably a much better use for custom validation.
+
+Development Process
+	1. Create Custom Validation Rule
+		a.Create @CourseCode annotation
+		b.Create CourseCodeConstraintValidator
+	2. Add validation rule to Customer Class
+	3. Display Error messages on HTML form
+	4. Update Confirmation Page
