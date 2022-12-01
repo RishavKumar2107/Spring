@@ -42,4 +42,5 @@ RealWorldProjectRequirement
 -If you delete an instructor , do not delete the Courses
 -If you delete a course , do not delete the instructor
 
-
+get Courses by Instructor
+------------------------------------------------------------------------------------------------
