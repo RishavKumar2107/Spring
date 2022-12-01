@@ -38,7 +38,8 @@ public class DeleteOnlyInstructorDetailDemo {
 			
 			System.out.println(theInstructor);
 			//remove the associated object reference
-			//break bi-directional link
+			//break  link bw instructor ----> instructorDetail because there is no instructorDetail
+			// after it is deleted so instructor will point to garbage value 	
 			//instructor --X--> instructorDetail
 			//			 <----	
 			

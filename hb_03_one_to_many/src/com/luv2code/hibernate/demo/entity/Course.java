@@ -26,6 +26,8 @@ public class Course {
 	 * JoinColumn(name="instructor_id") 
 	 * course has a column name instructor_id that has the key that points to actual instructor
 	 *  
+	 * 	 The @JoinColumn annotation combined with a @OneToOne mapping indicates that a given column in 
+	 * the owner entity refers to a primary key in the reference entity 
 	 */
 	
 	@ManyToOne(cascade= {CascadeType.DETACH , CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})

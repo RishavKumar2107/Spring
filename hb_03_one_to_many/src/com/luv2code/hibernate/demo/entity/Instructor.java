@@ -50,6 +50,7 @@ public class Instructor {
 	@JoinColumn(name="instructor_detail_id")
 	private InstructorDetail instructorDetail;
 	
+	//we can use the mappedBy parameter to indicate that the given column is owned by another entity:
 	//theInstructor ref is the one we created in Course Class
 	//this will tell that it can fetch courses based on the defined mapping in course class
 	@OneToMany(mappedBy="theInstructor",

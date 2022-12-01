@@ -32,4 +32,3 @@ Expectation : Delete Instructor Detail but do not  delete Instructor
 Development Process:
 	Create DeleteOnlyInstructorDetailDemo.java
 Note: We need to break the bi-directional link
--------------------------------OneToMany-----------------------------------------------------

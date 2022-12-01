@@ -32,3 +32,14 @@ Expectation : Delete Instructor Detail but do not  delete Instructor
 Development Process:
 	Create DeleteOnlyInstructorDetailDemo.java
 Note: We need to break the bi-directional link
+-------------------------------OneToManyBi-----------------------------------------------------
+(OneToMany)An Instructor can have many courses
+
+From Bi-directional we mean we can start with the Instructor and go to the Course or
+start with the Course and go to instructor
+
+RealWorldProjectRequirement
+-If you delete an instructor , do not delete the Courses
+-If you delete a course , do not delete the instructor
+
+
