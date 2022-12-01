@@ -1,0 +1,92 @@
+Setup 
+	1. Copy Spring 5 jar files to Lib folder
+	2. Install Tomcat 9 (Tomcat 10 support Jakarta EE9 which is not compatible with spring 5)
+	3. Install JDK 8 or high
+	4. IDE like Eclipse
+
+Spring has two main features :
+1. IOC : The approach of out outsourcing the construction and management of objects
+   Myapp ---give me a Coach Object--> Spring (Object Factory) 
+   		 <----------Coach Obj---------------
+   		 
+2. Dependency Injections
+A class can be dependent on another class object so it's Spring Object Factory responsibility to get you the dependencies
+
+Three ways of Configuring Spring Container
+ 1. XML (Legacy)
+ 2. Java Annotation
+ 3. Java Source Code
+
+-----------------------------------XML---------------------------------------------
+IOC:
+	Spring Development Process
+		1. Configure your spring bean
+				<bean id="myCoach"
+	 			class="com.luv2code.springdemo.TrackCoach">	
+	 			</bean>
+		2. Create a Spring Container
+				// load the spring configuration file
+				ClassPathXmlApplicationContext context = 
+						new ClassPathXmlApplicationContext("applicationContext.xml");
+		3. Retrieve beans from Container 
+				// retrieve bean from spring container
+			Coach theCoach = context.getBean("myCoach", Coach.class);
+			
+	What is Spring Bean?
+	Spring Bean is a simple java object created and maintained by spring container
+
+
+Dependency Injections: 
+	With XMl we have two types of DI:
+		1.Constructor Injection
+		2.Setter Injection
+	
+Other Topics:
+	- Injecting literal values
+	- Injecting values from Properties file
+	- Spring Bean Scope and lifecycle
+		Default Scope : Singleton 
+		Other Scope : Prototype , request , session, global session
+	- Bean LifeCycle
+		You can add custom code during bean initialization and bean destructions
+	
+	
+-----------------------------------Java Annotation------------------------------------
+
+Annotation are simple metadata about the Class
+These are processed at compile time or runtime for special processing
+
+IOC:
+	Development Process
+	1. Enable Component Scanning in Spring Config File
+		<!--  com.luv2code.springdemo is the package name -->
+		<context:component-scan base-package="com.luv2code.springdemo"></context:component-scan>
+	
+	2.Add the @Component Annotation to your java classes
+	3.Retrieve bean from Spring Container
+DI:
+	Spring uses Spring Autowiring for dependency injection
+	Autorwiring :	
+	1. Constructor Inj
+	2. Setter Inj
+	3. Field Inj
+
+Other:
+	- Injecting value from Properites file (@Value)
+	- Spring Bean Scope and lifecycle (@Scope)
+		Default Scope : Singleton 
+		Other Scope : Prototype , request , session, global session
+	- Bean LifeCycle (@PostConstruct and @PreDestroy)
+		You can add custom code during bean initialization and bean destructions
+		
+----------------------------------- Java Code based Config--------------------------
+Development process:
+	1. Create a  Java Class and annotate as @Configuration
+	2. Add Component Scanning support : @ComponentScan (optional)
+	3. Read Spring Java Configuration Class
+	4. Retrieve bean from Spring Container
+	
+Define Beans with Java Code **important
+https://www.digitalocean.com/community/tutorials/spring-bean-annotation
+
+
