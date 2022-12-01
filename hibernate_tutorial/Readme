@@ -1,0 +1,35 @@
+Hibernate :
+	Framework to persisting/saving java objects in a DB
+
+Hibernate uses JDBC for all DB Connection. It's just an abstract layer on top of JDBC
+
+Setup:
+	1. must have JDK installed
+	2. IDE
+	3. Database Server
+	4. Hibernate Jar and JDBC Driver 
+
+Benefits :
+	- handles all low level SQL
+	- Minimize the amount of JDBC code
+	- Provides Object to Relational Mapping
+------------------------------------------------------------------------------------------	
+Hibernate Tutorial Project
+
+1. Create a new MySQL user "hbstudent" using sql script
+2. Create a table student in a DB using script
+3.IDE: 
+	a. Create Eclipse Project
+	b. Download Hibernate jar (Hiberante Version 5)
+	c. Download MySQL JDBC Driver
+	d. Add jar files to Eclipse Project > Build Path
+	
+Development Process:
+	1. Add Hibernate Configuration File (hibernate.cfg.xml)
+		Contains all the information about JDBC
+	2. Annotate Java Class
+		Entity Class: Java Class that is mapped to DB table (Student.java)
+	3. Develop Java Code to perform DB Operation (CreateStudentDemo.java)
+
+Refer all java classes for CRUD operation.
+--------------------------------------------------------------------------------------------

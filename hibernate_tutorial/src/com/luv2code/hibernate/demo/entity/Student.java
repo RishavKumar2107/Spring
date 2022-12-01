@@ -16,11 +16,11 @@ The Hibernate team recommends the use of JPA annotations as a best practice.**/
 @Table(name="student")
 public class Student {
 	
-	@Id
+	@Id //primary key
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="first_name")
+	@Column(name="first_name")  //column name in DB
 	private String firstName;
 	
 	@Column(name="last_name")

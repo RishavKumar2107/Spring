@@ -11,11 +11,18 @@ public class CreateStudentDemo {
 	public static void main(String[] args) {
 		
 		//create session factory
+		//session factory reads the hibernate config file
+		//create session objects
+		//Heavy weight object
+		//only created once in your app
 		SessionFactory factory = new Configuration()
 								.configure("hibernate.cfg.xml")
 								.addAnnotatedClass(Student.class)
 								.buildSessionFactory();
 		//create session
+		//wraps a JDBC Connection
+		//short lived object
+		//Retrieved from Session Factory
 		Session session = factory.getCurrentSession();
 		
 		try {
