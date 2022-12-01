@@ -1,0 +1,35 @@
+In the DB you most likely will have
+	-Multiple Tables
+	-Relationship bw tables
+
+Advance Mapping
+	- OneToOne
+	- OneToMany
+	- ManyToMany
+	
+--------------------------------OneToOneUni-----------------------------------------------
+Each Instructor can have an "instructor detail" entity.
+
+Development Process
+	1. Define DB Table (instructor and instructor_detail)
+	2. Create InstructorDetail Class
+	3. Create Instructor Class
+	4. Create Main Class (CreateDemo.java and DeleteDemo.java)
+--------------------------------OneToOneBi---------------------------------------------------
+New Use Case: If we load Instructor Detail we would like to get the associated Instructor
+
+Development Process
+	1. Make Updates to InstructorDetail Class
+		@OneToOne(mappedBy=
+	2.Create GetInstructorDetailDemo.java
+
+Now , Bi-directional Cascade Delete
+Expectation : Delete Instructor Detail also cascade delete Instructor
+Development Process:
+	Create DeleteInstructorDetailDemo.java
+
+Expectation : Delete Instructor Detail but do not  delete Instructor
+Development Process:
+	Create DeleteOnlyInstructorDetailDemo.java
+Note: We need to break the bi-directional link
+-------------------------------OneToMany-----------------------------------------------------

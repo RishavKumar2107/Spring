@@ -42,6 +42,8 @@ public class Instructor {
 	@Column(name="email")
 	private String email;
 
+	/** The @JoinColumn annotation combined with a @OneToOne mapping indicates that a given column in 
+	the owner entity refers to a primary key in the reference entity **/
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="instructor_detail_id")
 	private InstructorDetail instructorDetail;

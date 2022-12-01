@@ -24,7 +24,7 @@ public class DeleteOnlyInstructorDetailDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			int id = 2;
+			int id = 1;
 			//start a transaction
 			System.out.println("Begin Transaction");
 			session.beginTransaction();
